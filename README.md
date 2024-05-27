@@ -2,7 +2,7 @@
 
 # Shopping Cart Simulation Video
 
-click me https://drive.google.com/drive/folders/1Kj0KOz2LBkTVN0dqlSf1Gwru9FfmG8IC?usp=sharing
+Click here - https://drive.google.com/drive/folders/1Kj0KOz2LBkTVN0dqlSf1Gwru9FfmG8IC?usp=sharing
 
 # FIRST
 
