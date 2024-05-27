@@ -1,0 +1,90 @@
+<h3 class="mx-auto w-25 border text-center py-2 mb-5 my-rounded-corner">Add Product</h3>
+<form [formGroup]="addproductForm" class="my-container mx-auto">
+
+    <!-- First Name -->
+    <div class="mb-3">
+        <div class="col">
+            <label class="form-label">Product Name</label>
+            <input class="form-control" id="productname" formControlName="productname">
+        </div>
+    </div>
+    <!-- Description -->
+    <div class="mb-3">
+    <div class="col">
+        <label class="form-label">Product Description</label>
+        <textarea class="form-control" id="description"  rows="12" formControlName="description">
+        </textarea> 
+    </div>
+</div>
+    
+     <!-- Category and Sub Category -->
+     <div class="row">
+        <div class="col mb-3">
+            <label class="form-label">Category</label>
+            <!-- <input class="form-control" id="category" >  -->
+            <select class="form-select" [formControl]="selectedCategory" formControlName="category">
+                <option value="0">Select Category</option>
+                <!-- <option *ngFor="let item of category" value="{{item.id}}">
+                    {{item.category}}
+                    <span *ngIf="paymentMethod.provider !== ''">{{" - "+paymentMethod.provider}}</span>
+                </option> -->
+                <option value="1">Electronics</option>
+                <option value="2">Furniture</option>
+                <option value="3">Clothes</option>
+            </select>
+        </div>
+        <div class="col mb-3">
+            <label class="form-label">Sub Category</label>
+            <input class="form-control" id="subcategory" formControlName="subcategory">
+        </div>
+    </div>
+
+    
+
+     <!-- Price -->
+     <div class="row">
+        <div class="col mb-3">
+            <label class="form-label">Original Price</label>
+            <input class="form-control" id="originalprice" formControlName="originalprice"> 
+        </div>
+        <div class="col mb-3">
+            <label class="form-label">Offer Precentage</label>
+            <input class="form-control" id="offerprecentage" formControlName="offerprecentage">
+        </div>
+        <div class="col mb-3">
+            <label class="form-label">Special Price</label>
+            <input class="form-control" id="specialprice" formControlName="specialprice">
+        </div>
+    </div>
+
+    <!-- Images-->
+    <div class="row mb-3">
+        <div class="col mb-3">
+            <label class="form-label">Add Product Image 1 :</label>
+            <input class="form-control" id="pwd" formControlName="img1">  
+        </div>
+        <div class="col mb-3">
+            <label class="form-label">Add Product Image 2 :</label>
+            <input class="form-control" id="rpwd" formControlName="img2">
+        </div>
+        <div class="col mb-3">
+            <label class="form-label">Add Product Image 3 :</label>
+            <input class="form-control" id="rpwd" formControlName="img3">
+        </div>
+        <div class="col mb-3">
+            <label class="form-label">Add Product Image 4 :</label>
+            <input class="form-control" id="rpwd" formControlName="img4">
+        </div>
+        <div class="col mb-3">
+            <label class="form-label">Add Product Image 5 :</label>
+            <input class="form-control" id="rpwd" formControlName="img5">
+        </div>
+    </div>
+
+    <!-- Create Account Button -->
+    <div >
+        <button type="submit" class="d-block mx-auto btn btn-outline-primary" >
+            Create Product
+        </button>
+    </div>
+</form>
