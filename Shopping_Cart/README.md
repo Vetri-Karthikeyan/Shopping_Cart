@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
+## node_modules
+
+Run `npm install` they are downloaded from the web and copied into the node_modules folder and Node.js is trained to look for them there when you import them.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
