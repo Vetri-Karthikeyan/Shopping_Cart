@@ -2,6 +2,10 @@
 
 This project was generated with ASP.NET WebAPI
 
+## node_modules
+
+Run `npm install` they are downloaded from the web and copied into the node_modules folder and Node.js is trained to look for them there when you import them.
+
 ## Build
 
 Run `dotnet build` to build the project.
