@@ -1,0 +1,33 @@
+<h3 class="mx-auto w-25 border text-center py-2 mb-5 my-rounded-corner">Products</h3>
+
+
+<table class="my-container mx-auto table mt-3" border="5px" >
+    <thead>
+        <tr>
+        <th scope="col">ProductId</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">CategoryId</th>
+        <th scope="col">OfferId</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        </tr> 
+    </thead>
+        <tbody *ngFor="let product of ProductData">
+            <tr>
+                <td>{{product.id}}</td>
+                <td>{{product.title}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.categoryId}}</td>
+                <td>{{product.offerId}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.quantity}}</td> 
+            </tr>
+        </tbody>
+</table>
+
+
+
+
+
+

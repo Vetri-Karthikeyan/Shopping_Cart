@@ -1,0 +1,42 @@
+<h3 class="mx-auto w-25 border text-center py-2 mb-5 my-rounded-corner">Users</h3>
+<table class="my-container mx-auto table mt-3" border="4px" >
+    <thead>
+        <tr>
+        <th scope="col">UserId</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">CreatedAt</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+        </tr> 
+    </thead>
+        <tbody *ngFor="let user of UserData">
+            <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.address}}</td>
+                <td>{{user.mobile}}</td>
+                <td>{{user.createdAt}}</td>
+                <td>{{user.status}}</td>
+                <td *ngIf="user.status==='Active'">   
+                    <button type="button" class="btn btn btn-outline-danger" [disabled]="user.usertype!='User'"
+                    (click)="this.utilityService.Block(user)">Block</button>
+                </td>
+                <td *ngIf="user.status!='Active'">   
+                    <button type="button" class="btn btn btn-outline-success" [disabled]="user.usertype!='User'"
+                    (click)="this.utilityService.Block(user)">UnBlock</button>
+                </td>
+            </tr>
+        </tbody>
+</table>
+
+
+
+
+
+
