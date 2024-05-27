@@ -1,0 +1,38 @@
+<!-- Login Form -->
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+
+    <!-- Email -->
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+        <div class="form-text text-danger" *ngIf="Email.errors?.['required'] && (Email.dirty || Email.touched)">
+            Email is Required
+        </div>
+        <div class="form-text text-danger" *ngIf="Email.errors?.['pattern'] && (Email.dirty || Email.touched)">
+            Email is Invalid.
+        </div>
+    </div>
+
+    <!-- Password -->
+    <div class="mb-3">
+        <label for="pwd" class="form-label">Password</label>
+        <input type="password" class="form-control" id="pwd" formControlName="pwd">
+        <div class="form-text text-danger" *ngIf="PWD.errors?.['required'] && (PWD.dirty || PWD.touched)">
+            Password is Required
+        </div>
+        <div class="form-text text-danger" *ngIf="PWD.errors?.['pattern'] && (PWD.touched || PWD.dirty)">
+            Password must contain atleast one uppercase letter, one lowercase letter, one number, one special character and must be above 8 characters
+        </div>
+    </div>
+
+    <!-- Login Button -->
+    <div>
+        <button type="submit" [disabled]="loginForm.invalid" class="d-block mx-auto btn btn-outline-primary">
+            Login
+        </button>
+    </div>
+
+    <div class="mt-3 text-center">
+        <h5 class="text-success">{{message}}</h5>
+    </div>
+</form>
