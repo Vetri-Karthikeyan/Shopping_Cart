@@ -1,5 +1,9 @@
 <h1 align="center">Hi 👋, I'm Vetri Karthikeyan</h1>
 
+# Repository URL
+
+Click here - https://github.com/Vetri-Karthikeyan/Shopping_Cart/
+
 # Shopping Cart Simulation Video
 
 Click here - https://drive.google.com/drive/folders/1Kj0KOz2LBkTVN0dqlSf1Gwru9FfmG8IC?usp=sharing
