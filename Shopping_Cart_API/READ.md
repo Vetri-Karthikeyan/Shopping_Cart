@@ -8,11 +8,11 @@ Run `npm install` they are downloaded from the web and copied into the node_modu
 
 ## Build
 
-Run `dotnet build` to build the project.
+Run `dotnet build`- Builds a project and all of its dependencies.
 
 ## Run
 
-Run `dotnet run` to execute.
+Run `dotnet run` to execute. Navigate to `https://localhost:7044` or `https://localhost:5071`.
 
 ## Building and Running
 
